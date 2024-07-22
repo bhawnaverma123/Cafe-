@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img id="logo" src="https://cdn.vectorstock.com/i/500p/79/93/cafe-logo-design-vector-21197993.jpg">
+            <h1>Cozy Cafe</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="CozyCafe.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="items">Select Items</label>
+                <select id="items" name="items" multiple required>
+                    <option value="espresso">Espresso - ₹250</option>
+                    <option value="americano">Americano - ₹300</option>
+                    <option value="cappuccino">Cappuccino - ₹350</option>
+                    <option value="latte">Latte - ₹400</option>
+                    <option value="green-tea">Green Tea - ₹250</option>
+                    <option value="chai-latte">Chai Latte - ₹350</option>
+                    <option value="herbal-tea">Herbal Tea - ₹300</option>
+                    <option value="matcha-latte">Matcha Latte - ₹400</option>
+                    <option value="croissant">Croissant - ₹250</option>
+                    <option value="muffin">Muffin - ₹300</option>
+                    <option value="scone">Scone - ₹350</option>
+                    <option value="cinnamon-roll">Cinnamon Roll - ₹400</option>
+                </select>
+                
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes"></textarea>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Cozy Cafe</p>
+        </div>
+    </footer>
+</body>
+</html>
